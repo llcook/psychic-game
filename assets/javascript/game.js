@@ -13,7 +13,7 @@ document.onkeyup = function (event) {
     var computerPick = alphabet[Math.floor(Math.random() * alphabet.length)];
 
     // APP ACCEPTS USERCHOICE ONLY IF IT'S IN ALPHABET
-    if (alphabet.indexOf(userChoice) !== -1) {
+    if ((alphabet.indexOf(userChoice) !== -1) && (guessesLeft > 0)) {
         console.log(userChoice);
 
 
