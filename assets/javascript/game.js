@@ -16,11 +16,13 @@ document.onkeyup = function (event) {
     if (alphabet.indexOf(userChoice) !== -1) {
         console.log(userChoice);
 
+
         if (userChoice === computerPick) {
             wins++;
         } else {
             losses++;
             guessesLeft--;
+            guessedLetters.push(" " + userChoice);
         }
 
         document.getElementById("wins").textContent = wins;
