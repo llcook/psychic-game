@@ -12,17 +12,25 @@ document.onkeyup = function (event) {
 
     var computerPick = alphabet[Math.floor(Math.random() * alphabet.length)];
 
-    // APP ACCEPTS USERCHOICE ONLY IF IT'S IN ALPHABET
-    if ((alphabet.indexOf(userChoice) !== -1) && (guessesLeft > 0)) {
-        console.log(userChoice);
+    if (alphabet.indexOf(userChoice) !== -1) {
+        console.log(" user choice: " + userChoice + " computer pick: " + computerPick);
 
 
         if (userChoice === computerPick) {
             wins++;
+            alert("The computer picked " + computerPick + " and so did you! You WIN!");
+            guessesLeft = 10;
+            guessedLetters = [];
         } else {
-            losses++;
             guessesLeft--;
             guessedLetters.push(" " + userChoice);
+        }
+        
+        if (guessesLeft < 0) {
+            losses++;
+            alert("Game over!")
+            guessesLeft = 10;
+            guessedLetters = [];
         }
 
         document.getElementById("wins").textContent = wins;

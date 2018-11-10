@@ -2,22 +2,36 @@
 <html>
 <meta charset="UTF-8">
 
-<script src="assets/javascript/game.js"></script>
+<head>
+    <title>The Psychic Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Bentham" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
 
 <body>
 
-    <h1>Psychic Game</h1>
+    <h1>The Psychic Game</h1>
 
-    <p>Guess what letter I'm thinking of:</p>
+    <section class="clearfix">
 
-    <div id="game">
+        <div class="image-container clearfix">
+        <img src="https://thumbs.gfycat.com/AgileUnselfishFirebelliedtoad-small.gif" id="game-image" id="game-image" />
+        </div>
 
-        <p>Wins: <span id="wins"></span></p>
-        <p>Losses: <span id="losses"></span></p>
-        <p>Guesses left: <span id="guessesLeft"></span></p>
-        <p>Guesses so far: <span id="guessedLetters"></span></p>
+        <div class="game-container">
+            <h2>Can you guess what letter I'm thinking of?</h2>
+        
+            <h2 class="game-stats">Wins: <span id="wins"></span></h2>
+            <h2 class="game-stats">Losses: <span id="losses"></span></p>
+            <h2 class="game-stats">Guesses left: <span id="guessesLeft"></span></p>
+            <h2 class="game-stats">Guesses so far: <span id="guessedLetters"></span></p>
+        </div>
 
-    </div>
+    </section>
 
 </body>
 

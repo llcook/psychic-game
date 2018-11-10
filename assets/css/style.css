@@ -1,0 +1,53 @@
+/* /* font-family: 'Cinzel Decorative', cursive;
+font-family: 'Bentham', serif; */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(indigo, magenta, orange);
+    color: white;
+    min-height: 100%;
+}
+
+/* #main-container {
+    margin: 0;
+} */
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 100px;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Bentham', serif;
+}
+
+.game-container {
+    
+}
+
+.image-container {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.game-stats {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 36px;
+}
